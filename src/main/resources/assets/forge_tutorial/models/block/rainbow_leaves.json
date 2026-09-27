@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "forge_tutorial:block/rainbow_leaves"
+  }
+}

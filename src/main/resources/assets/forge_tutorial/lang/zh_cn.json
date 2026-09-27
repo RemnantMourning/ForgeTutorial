@@ -1,5 +1,10 @@
 {
   "itemGroup.forge_tutorial.compressed_furnaces": "压缩熔炉",
+  "itemGroup.forge_tutorial.rainbow_items": "彩虹物品栏",
+
+  "item.forge_tutorial.rainbow_apple": "彩虹苹果",
+  "item.forge_tutorial.rainbow_apple.tooltip": "吃下后被炸上天空，并获得 20 秒生命恢复与抗性提升",
+  "item.forge_tutorial.rainbow_apple.cooldown": "冷却：%s 秒",
 
   "block.forge_tutorial.compressed_furnace_1": "压缩熔炉",
   "block.forge_tutorial.compressed_furnace_2": "二重压缩熔炉",
@@ -9,6 +14,11 @@
   "block.forge_tutorial.compressed_furnace_6": "六重压缩熔炉",
   "block.forge_tutorial.compressed_furnace_7": "七重压缩熔炉",
   "block.forge_tutorial.compressed_furnace_8": "八重压缩熔炉",
+
+  "block.forge_tutorial.rainbow_log": "彩虹木",
+  "block.forge_tutorial.rainbow_sapling": "彩虹树苗",
+  "block.forge_tutorial.rainbow_leaves": "彩虹树叶",
+  "block.forge_tutorial.rainbow_fruit": "彩虹果实",
 
   "commands.forge_tutorial.diamond_zombie.success": "已在 %s 处生成一只钻石僵尸",
   "commands.forge_tutorial.diamond_zombie.failed": "生成钻石僵尸失败"

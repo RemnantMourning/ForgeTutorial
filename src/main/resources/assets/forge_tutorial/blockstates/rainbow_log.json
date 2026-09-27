@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "forge_tutorial:block/rainbow_log"
+    },
+    "axis=z": {
+      "model": "forge_tutorial:block/rainbow_log_horizontal",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "forge_tutorial:block/rainbow_log_horizontal",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

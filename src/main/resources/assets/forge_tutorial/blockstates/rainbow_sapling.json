@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "stage=0": {
+      "model": "forge_tutorial:block/rainbow_sapling"
+    },
+    "stage=1": {
+      "model": "forge_tutorial:block/rainbow_sapling"
+    }
+  }
+}

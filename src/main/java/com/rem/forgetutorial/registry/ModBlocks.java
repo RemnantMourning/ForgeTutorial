@@ -2,10 +2,15 @@ package com.rem.forgetutorial.registry;
 
 import com.rem.forgetutorial.ForgeTutorial;
 import com.rem.forgetutorial.block.CompressedFurnaceBlock;
+import com.rem.forgetutorial.block.RainbowFruitBlock;
+import com.rem.forgetutorial.block.RainbowLeavesBlock;
+import com.rem.forgetutorial.block.RainbowLogBlock;
+import com.rem.forgetutorial.worldgen.RainbowTreeGrower;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -55,6 +60,48 @@ public final class ModBlocks {
      */
     private static BlockBehaviour.Properties furnaceProperties() {
         return BlockBehaviour.Properties.copy(Blocks.FURNACE).mapColor(MapColor.STONE);
+    }
+
+    // ------------------------------------------------------------------
+    // 彩虹果树系列
+    // ------------------------------------------------------------------
+
+    /** 彩虹果木：仿原版原木（硬度 2.0、可燃、斧头高效）。 */
+    public static final RegistryObject<RainbowLogBlock> RAINBOW_LOG =
+            BLOCKS.register("rainbow_log", () -> new RainbowLogBlock(
+                    BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
+                            .mapColor(MapColor.COLOR_MAGENTA)));
+
+    /** 彩虹果树苗。 */
+    public static final RegistryObject<SaplingBlock> RAINBOW_SAPLING =
+            BLOCKS.register("rainbow_sapling", () -> new SaplingBlock(
+                    new RainbowTreeGrower(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)
+                            .mapColor(MapColor.PLANT)));
+
+    /** 彩虹果树叶：会随随机刻在下方结出彩虹果。 */
+    public static final RegistryObject<RainbowLeavesBlock> RAINBOW_LEAVES =
+            BLOCKS.register("rainbow_leaves", () -> new RainbowLeavesBlock(
+                    BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)
+                            .mapColor(MapColor.PLANT)
+                            .randomTicks()));
+
+    /** 彩虹果：挂在树叶下方的果实，成熟后可采摘。 */
+    public static final RegistryObject<RainbowFruitBlock> RAINBOW_FRUIT =
+            BLOCKS.register("rainbow_fruit", () -> new RainbowFruitBlock(
+                    BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)
+                            .mapColor(MapColor.COLOR_MAGENTA)
+                            .randomTicks()
+                            .noCollission()));
+
+    static {
+        // 彩虹果树的方块物品
+        ITEMS.register("rainbow_log", () -> new BlockItem(RAINBOW_LOG.get(), new Item.Properties()));
+        ITEMS.register("rainbow_sapling", () -> new BlockItem(RAINBOW_SAPLING.get(), new Item.Properties()));
+        // 树叶：方便直接放置 / 在物品栏里看到
+        ITEMS.register("rainbow_leaves", () -> new BlockItem(RAINBOW_LEAVES.get(), new Item.Properties()));
+        // 果实：可直接放置观察生长
+        ITEMS.register("rainbow_fruit", () -> new BlockItem(RAINBOW_FRUIT.get(), new Item.Properties()));
     }
 
     private ModBlocks() {

@@ -30,6 +30,22 @@ public final class ModCreativeTabs {
                     })
                     .build());
 
+    /**
+     * "彩虹物品栏"：收纳所有彩虹系列物品。
+     */
+    public static final RegistryObject<CreativeModeTab> RAINBOW_ITEMS_TAB =
+            CREATIVE_MODE_TABS.register("rainbow_items", () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.RAINBOW_APPLE.get()))
+                    .title(Component.translatable("itemGroup.forge_tutorial.rainbow_items"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(ModItems.RAINBOW_APPLE.get());
+                        output.accept(ModBlocks.RAINBOW_SAPLING.get());
+                        output.accept(ModBlocks.RAINBOW_LOG.get());
+                        output.accept(ModBlocks.RAINBOW_LEAVES.get());
+                        output.accept(ModBlocks.RAINBOW_FRUIT.get());
+                    })
+                    .build());
+
     private ModCreativeTabs() {
     }
 

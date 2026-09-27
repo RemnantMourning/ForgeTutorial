@@ -1,5 +1,10 @@
 {
   "itemGroup.forge_tutorial.compressed_furnaces": "Compressed Furnaces",
+  "itemGroup.forge_tutorial.rainbow_items": "Rainbow Items",
+
+  "item.forge_tutorial.rainbow_apple": "Rainbow Apple",
+  "item.forge_tutorial.rainbow_apple.tooltip": "Launches you skyward and grants 20s of Regeneration and Resistance",
+  "item.forge_tutorial.rainbow_apple.cooldown": "Cooldown: %s s",
 
   "block.forge_tutorial.compressed_furnace_1": "Compressed Furnace",
   "block.forge_tutorial.compressed_furnace_2": "Double Compressed Furnace",
@@ -9,6 +14,11 @@
   "block.forge_tutorial.compressed_furnace_6": "Sextuple Compressed Furnace",
   "block.forge_tutorial.compressed_furnace_7": "Septuple Compressed Furnace",
   "block.forge_tutorial.compressed_furnace_8": "Octuple Compressed Furnace",
+
+  "block.forge_tutorial.rainbow_log": "Rainbow Wood",
+  "block.forge_tutorial.rainbow_sapling": "Rainbow Sapling",
+  "block.forge_tutorial.rainbow_leaves": "Rainbow Leaves",
+  "block.forge_tutorial.rainbow_fruit": "Rainbow Fruit",
 
   "commands.forge_tutorial.diamond_zombie.success": "Spawned a diamond-armored zombie at %s",
   "commands.forge_tutorial.diamond_zombie.failed": "Failed to spawn the diamond zombie"

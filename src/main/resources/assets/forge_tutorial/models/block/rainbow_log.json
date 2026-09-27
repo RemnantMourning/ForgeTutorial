@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "forge_tutorial:block/rainbow_log_top",
+    "side": "forge_tutorial:block/rainbow_log"
+  }
+}

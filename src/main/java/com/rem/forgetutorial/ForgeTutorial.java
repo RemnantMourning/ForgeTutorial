@@ -4,6 +4,8 @@ import com.rem.forgetutorial.command.ModCommands;
 import com.rem.forgetutorial.registry.ModBlockEntities;
 import com.rem.forgetutorial.registry.ModBlocks;
 import com.rem.forgetutorial.registry.ModCreativeTabs;
+import com.rem.forgetutorial.registry.ModFeatures;
+import com.rem.forgetutorial.registry.ModItems;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -29,6 +31,8 @@ public class ForgeTutorial {
         // 方块 -> 方块实体 -> 创造物品栏，顺序不能颠倒：
         // ModBlockEntities 构建时就会读取 ModBlocks 里已注册的方块实例。
         ModBlocks.register(MOD_BUS);
+        ModItems.register(MOD_BUS);
+        ModFeatures.register(MOD_BUS);
         ModBlockEntities.register(MOD_BUS);
         ModCreativeTabs.register(MOD_BUS);
 
