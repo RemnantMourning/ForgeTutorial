@@ -1,0 +1,15 @@
+{
+  "itemGroup.forge_tutorial.compressed_furnaces": "压缩熔炉",
+
+  "block.forge_tutorial.compressed_furnace_1": "压缩熔炉",
+  "block.forge_tutorial.compressed_furnace_2": "二重压缩熔炉",
+  "block.forge_tutorial.compressed_furnace_3": "三重压缩熔炉",
+  "block.forge_tutorial.compressed_furnace_4": "四重压缩熔炉",
+  "block.forge_tutorial.compressed_furnace_5": "五重压缩熔炉",
+  "block.forge_tutorial.compressed_furnace_6": "六重压缩熔炉",
+  "block.forge_tutorial.compressed_furnace_7": "七重压缩熔炉",
+  "block.forge_tutorial.compressed_furnace_8": "八重压缩熔炉",
+
+  "commands.forge_tutorial.diamond_zombie.success": "已在 %s 处生成一只钻石僵尸",
+  "commands.forge_tutorial.diamond_zombie.failed": "生成钻石僵尸失败"
+}

@@ -1,0 +1,15 @@
+{
+  "itemGroup.forge_tutorial.compressed_furnaces": "Compressed Furnaces",
+
+  "block.forge_tutorial.compressed_furnace_1": "Compressed Furnace",
+  "block.forge_tutorial.compressed_furnace_2": "Double Compressed Furnace",
+  "block.forge_tutorial.compressed_furnace_3": "Triple Compressed Furnace",
+  "block.forge_tutorial.compressed_furnace_4": "Quadruple Compressed Furnace",
+  "block.forge_tutorial.compressed_furnace_5": "Quintuple Compressed Furnace",
+  "block.forge_tutorial.compressed_furnace_6": "Sextuple Compressed Furnace",
+  "block.forge_tutorial.compressed_furnace_7": "Septuple Compressed Furnace",
+  "block.forge_tutorial.compressed_furnace_8": "Octuple Compressed Furnace",
+
+  "commands.forge_tutorial.diamond_zombie.success": "Spawned a diamond-armored zombie at %s",
+  "commands.forge_tutorial.diamond_zombie.failed": "Failed to spawn the diamond zombie"
+}

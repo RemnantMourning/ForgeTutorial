@@ -114,6 +114,12 @@ loom {
             runDir "run/server"
             vmArgs "-Dneoforge.enabledGameTestNamespace=${propertyString('mod_id')}"
         }
+        gameTestServer {
+            server()
+            name "GameTest"
+            runDir "run/gametest"
+            vmArgs "-Dforge.enabledGameTestNamespaces=${propertyString('mod_id')}"
+        }
     }
 }
 

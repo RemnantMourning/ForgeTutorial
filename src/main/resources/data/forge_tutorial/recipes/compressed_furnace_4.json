@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "forge_tutorial:compressed_furnace_3"
+    }
+  },
+  "result": {
+    "item": "forge_tutorial:compressed_furnace_4",
+    "count": 1
+  }
+}
